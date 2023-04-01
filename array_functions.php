@@ -8,63 +8,74 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Index Functions - PHP</title>
+    <title>Array Functions - PHP</title>
   </head>
   <body>
     <div class="container" >
 
     	<br>
-    	<h1>Index Functions - PHP</h1>
+    	<h1>Array Functions - PHP</h1>
     	<br>
+
 
 
 
 <?php
 
-//Index Array
+echo "<br>";
+echo "<h2 class='text-primary'>Count Function - PHP Array</h2>";
+echo "<p>The count() function returns the number of elements in an array.</p>";
+echo "<br>";
+?>
 
-$colors = array('Yellow','Green','Brown','Blue','Pink','Black','Red','White' );
+<h3>For Example : </h3>
+<br>
 
+<h4>$fruits = array('Apple', 'Banana', 'Orange', 'Mango', 'Guava');</h4>
+<br>
 
-echo "<h2> Print Single Record </h2>";
+<h5 class='text-primary'>count($fruits);</h5>
+<br>
 
-echo $colors[0] . "<br>";
-
-
-
-echo "<h2> Print All Records </h2>";
-
-echo "<h3> For Loop </h3>";
-
-echo "<ul>";
-for($i = 0; $i<=7; $i++){
-	echo "<li> $colors[$i] </li>";
-}
-echo "</ul>";
+<?php
 
 
+$fruits = array('Apple', 'Banana', 'Orange', 'Mango', 'Guava');
 
 
-echo "<h3> Foreach Loop </h3>";
-
-echo "<ul>";
-foreach ($colors as $value) {
-	echo "<li> $value </li>";
-}
-echo "</ul>";
+echo count($fruits);
+echo "<br>";
 
 
-// print_r($colors) . "<br>";
-
-// echo "<pre>";
-// print_r($colors) . "<br>";
-// echo "</pre>";
+?>
 
 
-// echo $colors[0] . "<br>";
-// echo $colors[1] . "<br>";
-// echo $colors[2] . "<br>";
-// echo $colors[3] . "<br>";
+<?php
+
+echo "<br>";
+echo "<h2 class='text-primary'>Sizeof  Function - PHP Array</h2>";
+echo "<p>The sizeof() function returns the number of elements in an array.</p>";
+echo "<p>The sizeof() function is an alias of the count() function.</p>";
+echo "<br>";
+?>
+
+<h3>For Example : </h3>
+<br>
+
+<h4>$fruits = array('Apple', 'Banana', 'Orange', 'Mango', 'Guava');</h4>
+<br>
+
+<h5 class='text-primary'>sizeof($fruits);</h5>
+<br>
+
+<?php
+
+
+$fruits = array('Apple', 'Banana', 'Orange', 'Mango', 'Guava');
+
+
+echo count($fruits);
+echo "<br>";
 
 
 ?>
